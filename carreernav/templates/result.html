@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Recommended Career:</h2>
+<h1>{{ career }}</h1>
+
+<h3>Skill Matching Score:</h3>
+
+<ul>
+{% for key, value in score.items() %}
+<li>{{ key }} : {{ value }}</li>
+{% endfor %}
+</ul>
+
+<a href="/">Back</a>
+
+</body>
+</html>
